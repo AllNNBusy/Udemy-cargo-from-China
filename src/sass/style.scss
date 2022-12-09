@@ -14,6 +14,7 @@
    --red-color: #ec644b;
    --grey-color: #3a3a3a;
    --black-color: #2e2e2e;
+   --red-rgb-color: 236, 100, 75;
 }
 .container {
    width: 114rem;
@@ -23,5 +24,8 @@
 @import 'blocks/title';
 @import 'blocks/descr';
 @import 'blocks/btn';
-@import 'blocks/header';
+@import 'blocks/animation';
 @import 'blocks/nav';
+@import 'blocks/header';
+@import 'blocks/benefits';
+@import 'blocks/media';

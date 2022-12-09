@@ -1,0 +1,234 @@
+@media (max-width: 1200px) {
+   .container {
+      max-width: 96rem;
+   }
+   .descr {
+      font-size: 1.2rem;
+      &_fz13 {
+         font-size: 1.2rem;
+      }
+      &_fz16 {
+         font-size: 1.4rem;
+      }
+      &_fz19 {
+         font-size: 1.7rem;
+      }
+      &_fz21 {
+         font-size: 1.9rem;
+      }
+      &_fz24 {
+         font-size: 2.2rem;
+      }
+   }
+   .title {
+      font-size: 2.2rem;
+      &_fz72 {
+         font-size: 5.2rem;
+      }
+      &_fz42 {
+         font-size: 3.2rem;
+      }
+      &_fz19 {
+         font-size: 1.5rem;
+      }
+      &_fz18 {
+         font-size: 1.4rem;
+      }
+      &_fz16 {
+         font-size: 1.2rem;
+      }
+   }
+   .nav {
+      grid-template-columns: 9.6rem 1fr 16.4rem;
+      &__contact {
+         display: none;
+      }
+      &__list {
+         justify-content: center;
+         padding: 0;
+      }
+   }
+   .header {
+      &__subtitle {
+         font-size: 3.2rem;
+      }
+   }
+}
+@media (max-width: 992px) {
+   .container {
+      max-width: 72rem;
+   }
+   .hamburger {
+      display: inline-block;
+      justify-self: flex-end;
+      &_active {
+         animation: btn 1s ease-in-out;
+      }
+   }
+   .nav {
+      grid-template-columns: 9.6rem 1fr 16.2rem 8.9rem;
+      position: relative;
+      &__list {
+         display: none;
+      }
+      &__list_active {
+         position: absolute;
+         left: 57rem;
+         top: 7.44rem;
+         display: flex;
+         flex-direction: column;
+         background-color: rgba($color: var(--red-rgb-color), $alpha: 0.9);
+         width: 15rem;
+         border-radius: 2rem;
+         padding: 0.5rem;
+         li {
+            border: 0;
+            &:nth-child(1) {
+               padding: 0 1.3rem;
+            }
+         }
+      }
+      &__contact {
+         display: flex;
+      }
+   }
+   .title {
+      font-size: 2.2rem;
+      &_fz16 {
+         font-size: 1.2rem;
+      }
+      &_fz72 {
+         font-size: 4.5rem;
+     }
+   }
+   .header {
+      &__subtitle {
+         font-size: 2.2rem;
+      }
+      &__devider {
+         &:before {
+            content: '';
+            width: 30rem;
+         }
+         &:after {
+            width: 30rem;
+         }
+      }
+      &__wrapper {
+         column-gap: 1rem;
+      }
+      &__items {
+         grid-template-rows: 6.9rem 1fr;
+      }
+   }
+}
+@media (max-width: 768px) {
+   .container {
+      max-width: 54rem;
+   }
+   .descr {
+      &_fz24 {
+         font-size: 2rem;
+      }
+   }
+   .title {
+      &_fz72 {
+         font-size: 3.5rem;
+      }
+   }
+   .header {
+      padding: 2rem 0 2rem 0;
+      &__title {
+         margin: 1rem 0 0 0;
+      }
+      &__subtitle {
+         margin: 0.5rem 0 0 0;
+         font-size: 2rem;
+      }
+      &__devider {
+         margin: 1.5rem auto 0 auto;
+         &:before {
+            width: 23rem;
+         }
+         &:after {
+            width: 23rem;
+         }
+      }
+      &__wrapper {
+         grid-template-columns: repeat(2, 1fr);
+         margin-top: 1.5rem;
+         column-gap: 1rem;
+         row-gap: 1.5rem;
+      }
+   }
+   .nav {
+      grid-template-columns: 9.6rem 1fr 8.9rem;
+      &__contact {
+         display: none;
+      }
+      &__list_active {
+         left: 39rem;
+      }
+   }
+}
+@media (max-width: 576px) {
+   .container {
+      max-width: 100%;
+      padding: 0 1rem;
+   }
+   .title {
+      &_fz72 {
+         font-size: 3rem;
+      }
+   }
+   .nav {
+      grid-template-columns: 8.9rem 17rem;
+      grid-template-rows: 1fr;
+      &__logo {
+         display: none;
+      }
+      &__btn {
+         grid-row: 1/2;
+         grid-column: 2/3;
+      }
+      &__list_active {
+         left: 0.4rem;
+         top: 4.84rem;
+      }
+   }
+   .header {
+      &__devider {
+         &:before {
+            width: 12rem;
+         }
+         &:after {
+            width: 12rem;
+         }
+      }
+      &__wrapper {
+         grid-template-columns: 1fr;
+      }
+      &__items {
+         grid-template-columns: 6.3rem 1fr;
+         grid-template-rows: 1fr;
+         justify-items: flex-start;
+         text-align: start;
+      }
+      &__items_descr {
+         padding-left: 2rem;
+      }
+   }
+   .hamburger {
+      grid-row: 1/2;
+      grid-column: 1/2;
+   }
+   .benefits {
+      padding: 3rem 0;
+      &__wrapper {
+         grid-template-columns: 1fr;
+         row-gap: 3rem;
+      }
+   }
+}
+
+

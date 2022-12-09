@@ -1,7 +1,8 @@
 .header {
+   position: relative;
    padding: 2rem 0 8rem 0;
    height: 68rem;
-   min-width: 100vh;
+   width: 100%;
    background: url('../img/header__bg.jpg') no-repeat center/cover;
    &__descr {
       margin: 0.9rem 0 0 0;
@@ -31,22 +32,20 @@
       &:before {
          content: '';
          position: absolute;
-         width: 0.1rem;
-         height: 39rem;
+         width: 39rem;
+         height: 0.1rem;
          background-color: var(--white-color);
-         left: -0.7rem;
-         top: -19.05rem;
-         transform: translateX(-20rem) rotateZ(90deg);
+         top: 0.4rem;
+         left: 2rem;
       }
       &:after {
          content: '';
          position: absolute;
-         width: 0.1rem;
-         height: 39rem;
+         width: 39rem;
+         height: 0.1rem;
          background-color: var(--white-color);
-         right: -40.8rem;
-         top: -19.05rem;
-         transform: translateX(-20rem) rotateZ(90deg);
+         right: 2rem;
+         top: 0.4rem;
       }
    }
    &__wrapper {
@@ -69,9 +68,9 @@
       color: var(--white-color);
    }
    &__btn {
+      display: block;
       font-size: 1.5rem;
       margin: 3rem auto 0 auto;
-      width: 23rem;
-      height: 5.7rem;
+      padding: 1.3em 3em;
    }
 }

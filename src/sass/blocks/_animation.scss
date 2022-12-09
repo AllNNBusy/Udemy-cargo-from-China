@@ -1,0 +1,11 @@
+@keyframes btn {
+   0% {
+      transform: translateY(0rem) scale(1);
+   }
+   50% {
+      transform: translateY(0.5rem) scale(0.8);
+   }
+   100% {
+      transform: translateY(0rem) scale(1);
+   }
+}
