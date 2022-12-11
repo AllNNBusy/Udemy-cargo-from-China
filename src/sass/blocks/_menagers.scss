@@ -1,0 +1,9 @@
+.menagers {
+   background: url('../img/managers__bg.jpg') no-repeat center/cover;
+   &__img {
+      img {
+         width: 53%;
+         height: 53%;
+      }
+   }
+}

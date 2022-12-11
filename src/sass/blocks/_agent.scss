@@ -1,0 +1,31 @@
+.agent {
+   padding: 5.8rem 0 7.5rem 0;
+   position: relative;
+   min-height: 32.4rem;
+   background: url('../img/agent__bg.jpg') no-repeat center/cover;
+   &__img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      width: 10.2rem;
+      height: 10.2rem;
+      border: var(--white-color) 0.1rem solid;
+      border-radius: 50%;
+      img {
+         width: 50%;
+         height: 50%;
+         object-fit: cover;
+      }
+   }
+   &__title {
+      margin: 2rem 0 0 0;
+      text-align: center;
+      color: var(--white-color);
+   }
+   &__descr {
+      margin: 2.2rem 0 0 0;
+      text-align: center;
+      color: var(--white-color);
+   }
+}

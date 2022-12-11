@@ -1,6 +1,8 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/fonts';
 
+@import 'base/mixins';
+
 * {
    font-family: 'Roboto', sans-serif;
    box-sizing: border-box;
@@ -28,4 +30,12 @@
 @import 'blocks/nav';
 @import 'blocks/header';
 @import 'blocks/benefits';
+@import 'blocks/jop';
+@import 'blocks/agent';
+@import 'blocks/delivery';
+@import 'blocks/consultation';
+@import 'blocks/menagers';
+@import 'blocks/work';
+@import 'blocks/reviews';
+@import 'blocks/forms';
 @import 'blocks/media';

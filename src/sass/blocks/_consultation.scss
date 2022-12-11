@@ -1,0 +1,63 @@
+.consultation {
+   background-color: var(--white-color);
+   padding-bottom: 8rem;
+   &__subtitle {
+      font-size: 2.8rem;
+      font-weight: 400;
+      color: var(--grey-color);
+      text-align: center;
+   }
+   &__wrapper {
+      width: 100%;
+      min-height: 16.6rem;
+      border: 0.1rem solid #898989;
+      margin-top: 7.1rem;
+      position: relative;
+   }
+   &__img {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 10.2rem;
+      height: 10.2rem;
+      border: var(--red-color) 0.1rem solid;
+      border-radius: 50%;
+      background-color: var(--white-color);
+      &:before {
+         content: '';
+         position: absolute;
+         background-color: white;
+         height: 0.5rem;
+         width: 1rem;
+         left: -11%;
+      }
+      &:after {
+         content: '';
+         position: absolute;
+         background-color: white;
+         height: 0.5rem;
+         width: 1rem;
+         right: -11%;
+      }
+      img {
+         width: 60%;
+         height: 60%;
+         object-fit: cover;
+      }
+   }
+   &__form {
+      margin-top: 6.7rem;
+   }
+   &__btn {
+      position: absolute;
+      bottom: 0;
+      border: 0.9rem solid var(--white-color);
+      left: 50%;
+      transform: translate(-50%,50%);
+      width: 18.4rem;
+   }
+}

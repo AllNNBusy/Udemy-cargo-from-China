@@ -1,0 +1,61 @@
+.reviews {
+   padding: 5.1rem 0 6.5rem 0;
+   background-color: var(--white-color);
+   &__title {
+      text-align: center;
+      color: var(--black-color);
+   }
+   &__divider {
+      @include divider_midle;
+      margin-top: 2rem;
+   }
+   &__subtitle {
+      margin: 1.7rem 0 0 0;
+      text-align: center;
+      color: var(--black-color);
+   }
+   &__slider {
+      position: relative;
+      margin: 3rem auto 0 auto;
+      max-width: 60rem;
+   }
+   &__items {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+   }
+   &__img {
+      width: 11.4rem;
+      height: 11.4rem;
+      img {
+         height: 100%;
+         width: 100%;
+         object-fit: cover;
+         border-radius: 50%;
+      }
+   }
+   &__slider_subtitle {
+      margin-top: 1.9rem;
+      color: var(--black-color);
+      text-align: center;
+   }
+   &__slider_descr {
+      margin-top: 1rem;
+      color: var(--black-color);
+      text-align: center;
+   }
+   &__slide__btn {
+      border: none;
+      width: 1.4rem;
+      height: 4.6rem;
+      background-color: var(--white-color);
+      position: absolute;
+      top: 0;
+   }
+   &__slide_prev {
+      transform: translate(19rem, 3rem);
+   }
+   &__slide_next {
+      transform: translate(39.5rem, 3rem);
+   }
+}

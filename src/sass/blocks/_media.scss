@@ -3,10 +3,7 @@
       max-width: 96rem;
    }
    .descr {
-      font-size: 1.2rem;
-      &_fz13 {
-         font-size: 1.2rem;
-      }
+      font-size: 1.4rem;
       &_fz16 {
          font-size: 1.4rem;
       }
@@ -53,10 +50,32 @@
          font-size: 3.2rem;
       }
    }
+   .jop {
+      &__wrapper {
+         grid-template-columns: 30rem 30rem 30rem;
+      }
+   }
+   .delivery {
+      &__items_title {
+         line-height: 5;
+      }
+   }
 }
 @media (max-width: 992px) {
    .container {
       max-width: 72rem;
+   }
+   .title {
+      font-size: 2.2rem;
+      &_fz16 {
+         font-size: 1.2rem;
+      }
+      &_fz18 {
+         font-size: 1.4rem;
+      }
+      &_fz72 {
+         font-size: 4.5rem;
+     }
    }
    .hamburger {
       display: inline-block;
@@ -92,15 +111,6 @@
          display: flex;
       }
    }
-   .title {
-      font-size: 2.2rem;
-      &_fz16 {
-         font-size: 1.2rem;
-      }
-      &_fz72 {
-         font-size: 4.5rem;
-     }
-   }
    .header {
       &__subtitle {
          font-size: 2.2rem;
@@ -119,6 +129,17 @@
       }
       &__items {
          grid-template-rows: 6.9rem 1fr;
+      }
+   }
+   .jop {
+      &__wrapper {
+         grid-template-columns: 22rem 22rem 22rem;
+      }
+   }
+   .consultation {
+      &__form {
+         grid-template-columns: 27.4rem;
+         row-gap: 1.5rem;
       }
    }
 }
@@ -168,6 +189,20 @@
       }
       &__list_active {
          left: 39rem;
+      }
+   }
+   .jop {
+      &__wrapper {
+         grid-template-columns: 25rem 25rem;
+         row-gap: 2rem;
+      }
+   }
+   .reviews {
+      &__slide_prev {
+      transform: translate(16rem, 3rem);
+      }
+      &__slide_next {
+      transform: translate(36.5rem, 3rem);
       }
    }
 }
@@ -227,6 +262,38 @@
       &__wrapper {
          grid-template-columns: 1fr;
          row-gap: 3rem;
+      }
+   }
+   .jop {
+      padding: 3rem 0 3rem 0;
+      &__wrapper {
+         grid-template-columns: 30rem ;
+         row-gap: 2rem;
+         justify-content: center;
+      }
+   }
+   .agent {
+      padding: 3rem 0 3rem 0;
+   }
+   .delivery {
+      padding: 3rem 0 3rem 0;
+   }
+   .consultation {
+      padding-bottom: 6rem;
+   }
+   .work {
+      padding: 3rem 0 0 0;
+   }
+   .reviews {
+      padding: 3rem 0 3rem 0;
+      &__slider {
+         width: 30rem;
+      }
+      &__slide_prev {
+      transform: translate(4rem, 3rem);
+      }
+      &__slide_next {
+      transform: translate(24.5rem, 3rem);
       }
    }
 }
