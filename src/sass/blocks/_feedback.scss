@@ -1,0 +1,55 @@
+.feedback {
+   background: url('../img/feedback__bg.jpg') no-repeat center/cover;
+   min-height: 43.8rem;
+   padding: 6.2rem 0 7.9rem 0;
+   &__wrapper {
+      display: grid;
+      width: 89.6rem;
+      margin: 0 auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: 7rem minmax(23rem, auto);
+   }
+   &__items-descr {
+      background-color: #25333c;
+      padding-top: 1.8rem;
+   }
+   &__items-title {
+      text-align: center;
+      color: var(--white-color);
+      margin-bottom: 0;
+   }
+   &__items-subtitle {
+      text-align: center;
+      font-weight: 400;
+      color: var(--white-color);
+      font-size: 1.4rem;
+      text-transform: uppercase;
+   }
+   &__form {
+      padding: 1.7rem 4rem 2.5rem 4rem;
+      background: rgba($color: #fff, $alpha: 0.7);
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 4.7rem 7.3rem auto;
+      justify-items: center;
+   }
+   &__input {
+      width: 100%;
+   }
+   &__textarea {
+      margin-top: 0.6rem;
+      width: 100%;
+      textarea {
+         resize: none;
+         width: 100%;
+         height: 100%;
+         padding: 1.9rem 2.8rem;
+         border-radius: 1rem;
+         border: 0.1rem solid rgba(0,0,0,.2);
+         background-color: var(--white-color);
+      }
+   }
+   &__btn {
+      margin-top: 1.6rem;
+   }
+}

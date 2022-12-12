@@ -1,16 +1,15 @@
 .feed-form {
    display: grid;
    justify-content: center;
-   grid-template-columns: repeat(3, 27.4rem);
+   grid-template-columns: repeat(3, 27rem);
    grid-template-rows: 4.7rem;
    grid-auto-rows: 4.7rem;
-   padding-bottom: 5.2rem;
+   column-gap: 0.4rem;
    input {
       display: block;
       padding: 1.9rem 2.8rem;
       background-color: var(--white-color);
       border: 0.1rem solid rgba($color: #000000, $alpha: 0.2);
       border-radius: 2.5rem;
-      margin-left: 0.4rem;
    }
 }

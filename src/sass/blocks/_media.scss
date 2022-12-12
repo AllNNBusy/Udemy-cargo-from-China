@@ -4,6 +4,9 @@
    }
    .descr {
       font-size: 1.4rem;
+      &_fz13 {
+         font-size: 1.3rem;
+      }
       &_fz16 {
          font-size: 1.4rem;
       }
@@ -26,13 +29,13 @@
          font-size: 3.2rem;
       }
       &_fz19 {
-         font-size: 1.5rem;
+         font-size: 1.7rem;
       }
       &_fz18 {
-         font-size: 1.4rem;
+         font-size: 1.6rem;
       }
       &_fz16 {
-         font-size: 1.2rem;
+         font-size: 1.4rem;
       }
    }
    .nav {
@@ -68,10 +71,13 @@
    .title {
       font-size: 2.2rem;
       &_fz16 {
-         font-size: 1.2rem;
+         font-size: 1.4rem;
       }
       &_fz18 {
-         font-size: 1.4rem;
+         font-size: 1.6rem;
+      }
+      &_fz19 {
+         font-size: 1.7rem;
       }
       &_fz72 {
          font-size: 4.5rem;
@@ -142,6 +148,31 @@
          row-gap: 1.5rem;
       }
    }
+   .feedback {
+      &__wrapper {
+         width: 100%;
+      }
+      &__form {
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: auto auto auto;
+      }
+      &__input {
+         grid-template-columns: 27rem;
+         row-gap: 0.4rem;
+         justify-content: start;
+      }
+      &__textarea {
+         margin-top: 0;
+      }
+      &__btn {
+         grid-column: 1/3;
+      }
+   }
+   .footer {
+      &__title {
+         display: none;
+      }
+   }
 }
 @media (max-width: 768px) {
    .container {
@@ -204,6 +235,21 @@
       &__slide_next {
       transform: translate(36.5rem, 3rem);
       }
+   }
+   .feedback {
+      &__form {
+         grid-template-columns: 1fr;
+         grid-template-rows: auto 15rem auto;
+      }
+      &__textarea {
+         margin-top: 0.6rem;
+      }
+      &__btn {
+         grid-column: initial;
+      }
+   }
+   .circle-up {
+      display: none;
    }
 }
 @media (max-width: 576px) {
@@ -294,6 +340,19 @@
       }
       &__slide_next {
       transform: translate(24.5rem, 3rem);
+      }
+   }
+   .feedback {
+      &__form {
+         padding:1.5rem 1rem 1.5rem 1rem;
+      }
+   }
+   .footer {
+      &__title {
+         display: none;
+      }
+      &__btn {
+         display: none;
       }
    }
 }

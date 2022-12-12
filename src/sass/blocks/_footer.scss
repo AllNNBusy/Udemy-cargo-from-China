@@ -1,0 +1,31 @@
+.footer {
+   min-height: 12rem;
+   background-color: #25333c;
+   &__wrapper {
+      display: flex;
+      min-height: 12rem;
+      justify-content: space-between;
+   }
+   &__items {
+      display: flex;
+      align-items: center;
+   }
+   &__title {
+      color: var(--white-color);
+      margin-left: 4.3rem;
+      margin-bottom: 0;
+   }
+   &__contact {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      color: var(--white-color);
+      a {
+         color: var(--white-color);
+         text-decoration: none;
+      }
+   }
+   &__btn {
+      margin-left: 1.8rem;
+   }
+}
