@@ -37,6 +37,7 @@
    }
    &__item {
       text-align: center;
+      @include box-shadow_text;
    }
    &__items_subtitle {
       margin-top: 2.8rem;

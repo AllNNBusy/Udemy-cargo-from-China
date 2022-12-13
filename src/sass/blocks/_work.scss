@@ -20,6 +20,7 @@
       text-align: center;
       width: 25rem;
       margin: 0 1rem 4rem 1rem;
+      @include box-shadow_text;
    }
    &__img {
       width: 5.5rem;

@@ -41,6 +41,7 @@
       flex-direction: column;
       align-items: center;
       padding: 1.4rem 2.1rem 0 2.1rem;
+      @include box-shadow_text;
    }
    &__item_active {
       display: none;
@@ -86,6 +87,7 @@
       flex-direction: column;
       align-items: center;
       padding: 1.4rem 2.1rem 0 2.1rem;
+      @include box-shadow_text;
    }
    &__item-hide_descr {
       color: var(--black-color);

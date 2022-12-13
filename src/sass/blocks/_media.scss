@@ -86,9 +86,6 @@
    .hamburger {
       display: inline-block;
       justify-self: flex-end;
-      &_active {
-         animation: btn 1s ease-in-out;
-      }
    }
    .nav {
       grid-template-columns: 9.6rem 1fr 16.2rem 8.9rem;
@@ -106,10 +103,20 @@
          width: 15rem;
          border-radius: 2rem;
          padding: 0.5rem;
+         z-index: 1;
          li {
             border: 0;
             &:nth-child(1) {
                padding: 0 1.3rem;
+            }
+            a {
+               &:hover {
+                  color: inherit;
+                  &:before {
+                     content: '';
+                     background-color: var(--white-color);
+                  }
+               }
             }
          }
       }

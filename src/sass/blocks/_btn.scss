@@ -9,4 +9,8 @@
    font-weight: 400;
    text-transform: uppercase;
    color: var(--white-color);
+   box-shadow: 1.5rem -1.5rem 1.5rem hsla(0, 76%, 49%, 0.9) inset;
+   &:hover {
+      box-shadow: 4.3rem -5.2rem 2.3rem 0.2rem rgba(0, 0, 0, 0.1) inset;
+   }
 }
